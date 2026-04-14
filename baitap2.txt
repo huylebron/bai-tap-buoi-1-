@@ -1,0 +1,47 @@
+Ưu điểm của Microservices
+Ưu điểmGiải thíchMở rộng linh hoạt (Scalability)Có thể scale từng service riêng lẻ theo nhu cầuTriển khai độc lậpMỗi service deploy riêng, không ảnh hưởng toàn hệ thốngĐộc lập công nghệMỗi service có thể dùng ngôn ngữ/công nghệ khác nhauDễ chia nhỏ teamMỗi team phụ trách một service, tăng tốc phát triểnTăng độ chịu lỗiMột service lỗi không làm sập toàn bộ hệ thống
+
+2. Nhược điểm / Thách thức
+Nhược điểmGiải thíchPhức tạp hệ thốngTăng mạnh độ phức tạp về kiến trúc và quản lýĐộ trễ mạngGiao tiếp qua network chậm hơn gọi nội bộ (in-process)Khó đảm bảo nhất quán dữ liệuPhải xử lý eventual consistency, transaction phức tạpChi phí vận hành caoCần DevOps, monitoring, logging, container, orchestrationDebug khóLỗi có thể nằm ở nhiều service khác nhauQuản lý version APIPhải đảm bảo tương thích giữa các serviceYêu cầu hạ tầng tốtCần CI/CD, Kubernetes, service discovery…
+
+3. Kết luận quan trọng
+Microservices chỉ phù hợp khi:
+
+
+Hệ thống đủ lớn
+
+
+Có nhiều team
+
+
+Có nhu cầu scale rõ ràng
+
+
+Doanh nghiệp có năng lực vận hành (DevOps)
+
+
+Ngược lại, nếu:
+
+
+Team nhỏ
+
+
+Sản phẩm chưa rõ hướng
+
+
+Chưa có vấn đề về scale
+
+
+→ Chuyển sang Microservices quá sớm sẽ:
+
+
+Tăng chi phí
+
+
+Làm chậm phát triển
+
+
+Tạo thêm rủi ro không cần thiết
+
+
+Kết luận: Microservices là công cụ mạnh, nhưng chỉ hiệu quả khi dùng đúng thời điểm và đúng bối cảnh.
